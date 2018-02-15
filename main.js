@@ -7,6 +7,7 @@ $(document).ready( function() {
     console.log(user)
     comp = compInput()
     console.log(comp)
+    comparison(user, comp)
   }
 
   function compInput() {
@@ -15,17 +16,21 @@ $(document).ready( function() {
     return compoptions[compchoice]
 }
 
-  function comparison() {
-    if (user === comp)
-      
-
-
-
+  function comparison(user, comp) {
+    if (user === comp) {
+      $('#result-message').text('TIE')
+      console.log('tie')
+    }
+    else if ((user === 'rock' && comp === 'scissors') || (user === 'scissors' && comp === 'paper') || (user === 'paper' && comp === 'rock')) {
+      $('#result-message').text('VICTORY ACHIEVED')  
+      console.log('yay')
+    }
+    else {
+      $('#result-message').text('YOU DIED')
+      console.log('ded')
+    }
   }
 
-  function result() {
-
-  }
 
 $('.choice').on('click', userInput)
 

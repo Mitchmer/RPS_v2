@@ -22,12 +22,20 @@ img {
 
 }
 
+.message-container {
+  vertical-align: center;
+  margin: 0 auto;
+  color: darkkhaki;
+  font-size: 50px;
+  text-align: center;
+}
 .grid {
   width: 60%;
   margin: 0 auto;
   border-style: solid;
   border-color: black;
-  padding: 2% 10%;
+  border-radius: 30px;
+  padding: 2% 10% 2% 20%;
 }
 
 .col-mid {
@@ -38,7 +46,7 @@ img {
   width: 100%;
   display: inline-block;
   padding: 100px 0;
-  margin: 10% auto;
+  margin: 5% auto 0 auto;
   background-color: maroon
 }
 
