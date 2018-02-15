@@ -1,25 +1,32 @@
 
 
-// $(document).ready( function() {
-
+$(document).ready( function() {
 
   function userInput(user) {
     var user = this.id
     console.log(user)
-    compInput()
+    comp = compInput()
+    console.log(comp)
   }
 
   function compInput() {
-    
+    var compoptions = ['rock', 'paper', 'scissors']
+    var compchoice = Math.floor(Math.random() * compoptions.length)
+    return compoptions[compchoice]
+}
+
+  function comparison() {
+    if (user === comp)
+      
+
+
+
   }
 
-//   function comparison() {
+  function result() {
 
-//   }
-
-//   function result() {
-
-//   }
-// })
+  }
 
 $('.choice').on('click', userInput)
+
+})
