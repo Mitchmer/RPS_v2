@@ -4,8 +4,8 @@ $(document).ready( function() {
 
   function userInput(user) {
     var user = this.id
-    console.log(user)
     comp = compInput()
+    $('#choice-msg').text(user + '    VS    ' + comp)
     console.log(comp)
     comparison(user, comp)
   }
